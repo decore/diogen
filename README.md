@@ -1,4 +1,4 @@
 static_layout
 =============
 
-My own basic html template with static layout
+Html шаблон со статичной шириной страницы на основе сетки twitter bootstrap
