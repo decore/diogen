@@ -1,6 +1,11 @@
-@text: #525252;
+@baseColor: #000;
+@black: #000;
+@white: #fff;
 
-.tahoma (@size:14px, @line-height:1.25, @style:normal, @weight:normal) {
+.baseFont (@size:14px, @line-height:1.5em, @style:normal, @weight:normal) {
+    font:@style @weight @size/@line-height Tahoma, Arial, sans-serif;
+}
+.headerFont (@size:14px, @line-height:1.5em, @style:normal, @weight:normal) {
     font:@style @weight @size/@line-height Tahoma, Arial, sans-serif;
 }
 .gradient(@background, @startColor, @endColor) {
