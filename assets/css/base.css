@@ -65,14 +65,14 @@ input[type="submit"] {
 .form-block {width:380px;}
 .form-row {
     padding-top:10px; padding-bottom:10px;
-    label {display:block; padding:0px 0px 5px; color:darken(@blue, 15%); font-size:16px;}
-    .note {font-size:12px; color:lighten(@black, 35%); padding:5px 0px;}
+    label {display:block; padding:0px 0px 5px; color:@baseColor; font-size:16px;}
+    .note {font-size:12px; color:lighten(@baseColor, 15%); padding:5px 0px;}
     &.form-submit {text-align:center;}
     input[type="text"], input[type="password"], select, textarea {width:100%;}
 }
 span.error {color:#f00; font-size:13px;}
 
 .browserhappy {
-    padding:10px; font-size:14px; background:#f00; color:#fff; 
-    p {font-size:14px; color:#fff;}
+    padding:10px; font-size:14px; background:#f00; color:@white; 
+    p {font-size:14px; color:@white;}
 }
