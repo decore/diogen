@@ -43,7 +43,7 @@
     -webkit-transition: @arguments; -moz-transition: @arguments; -o-transition: @arguments; transition: @arguments;
 }
 .transition-multiple (...) {
-    -webkit-transition: @{arguments}.join(",")`; -moz-transition: ~`@{arguments}.join(",")`; -o-transition: ~`@{arguments}.join(",")`; transition: ~`@{arguments}.join(",")`;
+    -webkit-transition: ~`@{arguments}.join(",")`; -moz-transition: ~`@{arguments}.join(",")`; -o-transition: ~`@{arguments}.join(",")`; transition: ~`@{arguments}.join(",")`;
 }
 .transform (...) {
     transform:@arguments; -webkit-transform:@arguments; -moz-transform:@arguments; -o-transform:@arguments; -ms-transform:@arguments;
