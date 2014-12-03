@@ -259,6 +259,7 @@ hr {
   clip: auto;
 }
 .container {
+  width:970px !important;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
