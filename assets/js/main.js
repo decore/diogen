@@ -10,7 +10,6 @@ $(document).ready(function() {
 	});
     accordion();
     ajax_forms();
-    $('.js-email').js_email();
 });
 
 function accordion() {
@@ -128,13 +127,3 @@ function ajax_forms() {
         $.fancybox.close();
     });
 }
-
-$.fn.extend({
-    js_email: function() {
-        return $(this).each(function() {
-            email = $(this).text().split(' ');
-            email = email[0]+'@'+email[1]+'.'+email[2];
-            $(this).replaceWith('<a class="js-email" href="mailto:'+email+'">'+email+'</a>');
-        });
-    }
-});
