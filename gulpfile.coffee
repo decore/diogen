@@ -26,6 +26,6 @@ gulp.task 'server', ->
 
 gulp.task 'watch', ->
     gulp.watch('assets/**/*.styl', ['stylus'])
-    gulp.watch('index.html', ['html'])
+    gulp.watch(['index.html', 'assets/img/*'], ['html'])
 
 gulp.task 'default', ['server', 'stylus', 'watch']
