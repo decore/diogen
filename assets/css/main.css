@@ -679,7 +679,7 @@ span.error {
   border-bottom: 1px solid #af8234;
   text-shadow: 1px 1px #fedfa0;
   box-shadow: inset 0 1px #fee9aa, inset 1px 0 #fed67f, inset -1px 0 #feda85, inset 0 -1px #feca6f, 0 2px #b98a37, 0 3px #9f7630, 0 4px 2px rgba(0,0,0,0.4);
-  background: url("../img/wood-buttons.jpg");
+  background: url("../img/textures/wood-buttons.jpg");
   background-color: #fed166;
   font-weight: 700;
   text-decoration: none;
@@ -702,7 +702,7 @@ span.error {
 }
 .call-back-1 {
   height: 454px;
-  background: url("../img/backgrounds/2.jpg");
+  background: no-repeat 0 0 url("../img/backgrounds/2.jpg");
 }
 .call-back-2 {
   height: 454px;
@@ -727,6 +727,61 @@ span.error {
 .contacts__wrap p {
   font-size: 17px;
   padding-top: 30px;
+}
+.footer__wrap {
+  height: 87px;
+}
+.footer__title {
+  float: left;
+  margin-right: 40px;
+}
+.footer__title h2 {
+  padding: 20px 0 3px 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: #3e271c;
+}
+.footer__title p {
+  font-size: 14px;
+  color: #3e271c;
+  padding-top: 0;
+}
+.footer__tel {
+  float: left;
+  margin-right: 32px;
+}
+.footer__tel p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #3e271c;
+  padding: 20px 0 0 0;
+}
+.footer__tel p:last-child {
+  font-size: 13px;
+  font-weight: normal;
+  padding-top: 0;
+}
+.footer__address {
+  float: left;
+  margin-right: 40px;
+}
+.footer__address p {
+  padding: 0;
+  color: #3e271c;
+  font-size: 14px;
+}
+.footer__address p:first-child {
+  padding-top: 22px;
+}
+.footer__button {
+  float: left;
+  padding-top: 32px;
+}
+.footer__button a {
+  height: 33px;
+  padding: 8px 13px;
+  font-size: 14px;
+  border-radius: 10px;
 }
 .header__wrap {
   display: table;
@@ -771,5 +826,5 @@ span.error {
 }
 body {
   font-family: 'Ubuntu', sans-serif;
-  background: url("../img/wood-bg.jpg");
+  background: url("../img/textures/wood-bg.jpg");
 }
