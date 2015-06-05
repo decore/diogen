@@ -702,7 +702,7 @@ span.error {
 }
 .call-back-1 {
   height: 454px;
-  background: url("../img/backgrounds/2.jpg");
+  background: no-repeat 0 0 url("../img/backgrounds/2.jpg");
 }
 .call-back-2 {
   height: 454px;
