@@ -1,0 +1,49 @@
+.ico_dollar {
+  background-image: url("spritebox-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  height: 75px;
+  width: 80px;
+}
+.ico_calendar {
+  background-image: url("spritebox-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -84px -4px;
+  height: 72px;
+  width: 78px;
+}
+.ico_free {
+  background-image: url("spritebox-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px -79px;
+  height: 71px;
+  width: 80px;
+}
+.ico_shope {
+  background-image: url("spritebox-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -84px -79px;
+  height: 71px;
+  width: 78px;
+}
+.ico_marker {
+  background-image: url("spritebox-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  height: 39px;
+  width: 41px;
+}
+.ico_fan {
+  background-image: url("spritebox-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -45px 0px;
+  height: 39px;
+  width: 35px;
+}
+.ico_avto-left {
+  background-image: url("spritebox-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -84px -3px;
+  height: 36px;
+  width: 48px;
+}

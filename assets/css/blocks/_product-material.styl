@@ -1,2 +1,66 @@
 .product-material
-    height: 400px
+	height: 580px
+	&__wrap
+		height: 580px
+		padding-top: 38px
+		position: relative
+		background: no-repeat 0 266px url(../img/product-material/wood.png)
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			left: -382px
+			bottom: 0
+			width: 258px
+			height: 336px
+			background: no-repeat 0 0 url(../img/product-material/gloves.png)
+			z-index: -100
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			right: -396px
+			top: 0
+			width: 450px
+			height: 122px
+			background: no-repeat 0 0 url(../img/product-material/towel.png)
+			z-index: -100
+		h2
+			font-family: $cambria
+			font-size: 44px
+			color: #7dab09
+			line-height: 1.2em
+	&__slider
+		width: 420px !important
+		min-height: 200px
+		position: absolute
+		right: 30px
+		top: 235px
+		&__item
+			width: 420px !important
+			min-height: inherit
+			h3
+				font-size: 24px
+				padding-top: 5px
+				line-height: 1.3em
+			p
+				font-size: 16px
+				line-height: 1.9em
+@media (max-width: 1750px)
+	.product-material__wrap
+		&:before
+			left: -300px
+		&:after
+			right: -300px
+@media (max-width: 1560px)
+	.product-material__wrap
+		&:before
+			left: -250px
+		&:after
+			right: -200px
+@media (max-width: 1350px)
+	.product-material__wrap
+		&:before
+			display: none
+		&:after
+			display: none
