@@ -1,3 +1,56 @@
 .call-back-1
     height: 454px
-    background: no-repeat 0 0 url(../img/backgrounds/2.jpg)
+    width: 100% !important
+    background: no-repeat 50% 0 url(../img/backgrounds/bg_call-back-1.jpg) fixed
+    background-size: cover
+    &__wrap
+        height: 270px
+        position: relative
+    &__call-info
+        margin-top: 40px
+        width: 100%
+        height: 317px
+        border: 3px solid rgba(255,255,255,0.29)
+        position: absolute
+        z-index: 5
+        legend
+            padding: 20px 30px 0 20px
+            font-family: $cambria
+            font-size: 36px
+            color: #fff
+            text-shadow: 1px 1px 3px #000
+            line-height: 1.1em
+            margin-left: 20px
+        p
+            font-size: 18px
+            text-shadow: 1px 1px 3px #000
+            color: #fff
+            padding-left: 40px
+            padding-top: 55px
+        a
+            display: inline-block
+            position: relative
+            margin-left: 45px
+            width: 205px
+            height: 40px
+            font-size: 14px
+            text-transform: uppercase
+            line-height: 40px
+            text-align: center
+            border-radius: 8px
+            padding-left: 20px
+            &:after
+                content: ""
+                display: block
+                position: absolute
+                top: 12px
+                left: 15px
+                width: 16px
+                height: 16px
+                background: no-repeat 0 0 url(../img/icons/attention.png)
+    &__tel
+        float: left
+        font-size: 39px !important
+        font-weight: bold
+        padding-top: 0 !important
+        margin-top: 13px
