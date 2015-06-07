@@ -12,16 +12,14 @@ $(document).ready(function() {
     ajax_forms();
 
     // owl
-    // $("#product-types-slider").owlCarousel({
-    //     autoPlay: 5000,
-    //     items : 1,
-    //     theme : "theme-product-material",
-    //     singleItem : true
-    // });
+    $("#product-types-slider").owlCarousel({
+        autoPlay: 5000,
+        items : 1,
+        singleItem : true
+    });
     // $("#product-types-img").owlCarousel({
     //     autoPlay: 5000,
     //     items : 1,
-    //     theme : "theme-product-material",
     //     singleItem : true
     // });
     $("#product-material-slider").owlCarousel({
