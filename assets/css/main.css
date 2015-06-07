@@ -967,6 +967,92 @@ span.error {
 .product-features {
   height: 680px;
 }
+.product-material {
+  height: 580px;
+}
+.product-material__wrap {
+  height: 580px;
+  padding-top: 38px;
+  position: relative;
+  background: no-repeat 0 266px url("../img/product-material/wood.png");
+}
+.product-material__wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -382px;
+  bottom: 0;
+  width: 258px;
+  height: 336px;
+  background: no-repeat 0 0 url("../img/product-material/gloves.png");
+  z-index: -100;
+}
+.product-material__wrap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -396px;
+  top: 0;
+  width: 450px;
+  height: 122px;
+  background: no-repeat 0 0 url("../img/product-material/towel.png");
+  z-index: -100;
+}
+.product-material__wrap h2 {
+  font-family: 'Cambria Math', Georgia, serif;
+  font-size: 44px;
+  color: #7dab09;
+  line-height: 1.2em;
+}
+.product-material__slider {
+  width: 420px !important;
+  min-height: 200px;
+  position: absolute;
+  right: 30px;
+  top: 235px;
+}
+.product-material__slider__item {
+  width: 420px !important;
+  min-height: inherit;
+}
+.product-material__slider__item h3 {
+  font-size: 24px;
+  padding-top: 5px;
+  line-height: 1.3em;
+}
+.product-material__slider__item p {
+  font-size: 16px;
+  line-height: 1.9em;
+}
+@media (max-width: 1750px) {
+  .product-material__wrap:before {
+    left: -300px;
+  }
+  .product-material__wrap:after {
+    right: -300px;
+  }
+}
+@media (max-width: 1560px) {
+  .product-material__wrap:before {
+    left: -250px;
+  }
+  .product-material__wrap:after {
+    right: -200px;
+  }
+}
+@media (max-width: 1350px) {
+  .product-material__wrap:before {
+    display: none;
+  }
+  .product-material__wrap:after {
+    display: none;
+  }
+}
+@media (max-width: 1030px) {
+  .theme-product-material .owl-controls {
+    right: -40px !important;
+  }
+}
 .product-types {
   height: 680px;
 }
