@@ -5,6 +5,8 @@
 	background-size: cover
 	&__wrap
 		height: 270px
+		z-index: 1
+		position: absolute
 	&__call-info
 		margin-top: 40px
 		width: 100%
@@ -51,5 +53,14 @@
 		font-weight: bold
 		padding-top: 0 !important
 		margin-top: 13px
-.mask-coll-back
-	box-shadow: 0 6px 126px 126px rgba(0,0,0,0.5), 0 1px 0px rgba(0,0,0,0.3), 0 0 44px rgba(0,0,0,0.1) inset
+.mask-coll-back-gray
+	width: 325px
+	box-shadow: 0 108px 239px 208px rgba(0,0,0,0.3), 0 1px 0px rgba(0,0,0,0.2), 0 0 44px rgba(0,0,0,0.1) inset
+	position: relative
+	z-index: -1
+	left: 195px
+	top: 31px
+.mask-coll-back-white
+	width: 484px
+	position: absolute
+	box-shadow: 233px 20px 50px 13px rgba(240, 236, 232, 0.72), 0px 0px 44px rgba(246, 241, 241, 0.38) inset
