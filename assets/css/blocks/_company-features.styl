@@ -1,3 +1,49 @@
 .company-features
-    height: 454px
-    background: no-repeat 0 0 url(../img/backgrounds/3.jpg)
+    min-height: 860px
+    background: no-repeat 50% 0 url(../img/backgrounds/bg_company-features.jpg) fixed
+    background-size: cover
+    &__bottom-content
+        border-top: 1px dotted rgba(255,255,255,0.2)
+        .company-features__item
+            padding-top: 157px
+    &__item
+        float: left
+        width: 50%
+        min-height: 430px
+        position: relative
+        padding-top: 205px
+        &.vertical-line
+            &:before
+                content: ""
+                display: block
+                position: absolute
+                top: 126px
+                right: 0
+                height: 635px
+                border-right: 1px dotted rgba(255,255,255,0.2)
+        &__icon-1, &__icon-2, &__icon-3, &__icon-4
+            position: absolute
+        &__icon-1
+            top: 124px
+            left: 195px
+        &__icon-2
+            top: 124px
+            left: 204px
+        &__icon-3
+            top: 72px
+            left: 195px
+        &__icon-4
+            top: 72px
+            left: 204px
+        h3
+            font-size: 24px
+            color: #fff
+            text-align: center
+            text-shadow: 1px 1px 2px #000
+            line-height: 1em
+        p
+            font-size: 18px
+            color: #fff
+            text-align: center
+            text-shadow: 1px 1px 2px #000
+            font-weight: 400
