@@ -1,2 +1,95 @@
 .product-features
-    height: 680px
+    position: relative
+    &__head
+        height: 142px
+        position: relative
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            right: 0
+            top: 24px
+            width: 477px
+            height: 425px
+            background: no-repeat 0 0 url(../img/product-features/broom.png)
+            z-index: -1
+        &__item-1, &__item-2, &__item-3
+            height: 142px
+            position: relative
+            p
+                font-size: 18px
+                color: #370f06
+                padding-left: 72px
+                margin-top: 68px
+        &__item-2 p
+            padding-left: 84px
+            margin-top: 56px
+        &__item-3 p
+            padding-left: 80px
+            margin-top: 56px
+        &__icon-1, &__icon-2, &__icon-3
+            position: absolute
+            top: 57px
+            left: 42px
+        &__icon-1
+            top: 63px
+            left: 8px
+        &__icon-3
+            top: 56px
+            left: 45px
+    &__title
+        height: 153px
+        background: rgba(239,232,225,0.82)
+        box-shadow: 0 -7px 30px rgba(0,0,0,0.3)
+        h2
+            padding-top: 54px
+    &__item-1, &__item-2, &__item-3
+        height: 313px
+        .container
+            height: inherit
+        &__img
+            height: 358px
+            background: no-repeat 0 0 url(../img/product-features/img-1.png)
+            margin-top: -23px
+            margin-bottom: -23px
+        &__text
+            h3
+                font-size: 24px
+                line-height: 1.2em
+                padding-top: 45px
+                color: #291606
+            p
+                font-size: 18px
+                color: #291606
+                line-height: 1.2em
+                margin-top: 22px
+    &__item-2
+        background: rgba(239,232,225,.82)
+        &__img
+            background: no-repeat 0 0 url(../img/product-features/img-2.png)
+        &__text
+            margin-top: 30px
+            h3
+                padding-top: 7px
+    &__item-3
+        &__img
+            background: no-repeat 0 0 url(../img/product-features/img-3.png)
+        &__text
+            margin-top: 30px
+            h3
+                padding-top: 41px
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            right: 0
+            bottom: 0
+            width: 562px
+            height: 120px
+            background: no-repeat 0 0 url(../img/product-features/towel.png)
+@media (max-width: 1650px)
+    .product-features__head:before
+        display: none
+@media (max-width: 1400px)
+    .product-features__item-3:before
+        display: none
