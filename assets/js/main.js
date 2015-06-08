@@ -15,6 +15,7 @@ $(document).ready(function() {
     $("#product-types-slider").owlCarousel({
         // autoPlay: 5000,
         items : 1,
+        pagination : false,
         singleItem : true
     });
     $("#product-types-img").owlCarousel({
