@@ -11,6 +11,29 @@ $(document).ready(function() {
     accordion();
     ajax_forms();
 
+ymaps.ready(function () {
+                    var myMap = new ymaps.Map('map', {
+                            center: [55.674692, 37.722478],
+                            zoom: 18
+                        }),
+                        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                            hintContent: 'Собственный значок метки'
+                        }, {
+                            // Опции.
+                            // Необходимо указать данный тип макета.
+                            iconLayout: 'default#image',
+                            // Своё изображение иконки метки.
+                            iconImageHref: '/assets/img/icons/cursor-map.png',
+                            // Размеры метки.
+                            iconImageSize: [30, 42],
+                            // Смещение левого верхнего угла иконки относительно
+                            // её "ножки" (точки привязки).
+                            iconImageOffset: [-3, -42]
+                        });
+
+                    myMap.geoObjects.add(myPlacemark);
+                });
+
     // owl
     $("#product-types-slider").owlCarousel({
         // autoPlay: 5000,
