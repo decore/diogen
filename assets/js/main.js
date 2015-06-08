@@ -65,6 +65,13 @@ $(document).ready(function() {
         theme : "theme-product-material",
         singleItem : true
     });
+
+    //wow
+    if (!($.browser.msie)){
+        if(!($.browser.versionNumber==8)){
+            new WOW().init({mobile: false});
+        }
+    };
 });
 
 function accordion() {
