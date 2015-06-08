@@ -1,4 +1,12 @@
 node_modules
 tmp
 public
+<<<<<<< HEAD
 bower_components
+||||||| merged common ancestors
+bower_components
+assets/css/*.css
+psd
+=======
+bower_components
+>>>>>>> 508424355e617441c324cdf223909551bbe012b1
