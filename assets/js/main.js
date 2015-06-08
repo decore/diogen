@@ -20,7 +20,8 @@ $(document).ready(function() {
     $("#product-types-img").owlCarousel({
         // autoPlay: 5000,
         items : 1,
-        singleItem : true
+        singleItem : true,
+        pagination : false
     });
     $("#product-material-slider").owlCarousel({
         autoPlay: 5000,

@@ -1,2 +1,66 @@
 .product-types
     height: 661px
+    margin-top: 74px
+    &__heading
+        padding-top: 48px
+        h2
+            font-size: 38px !important
+            line-height: 1em
+            float: left
+    &__btns
+        width: 600px
+        float: right
+        margin-top: 20px
+        a
+            float: right
+            display: block
+            padding: 5px 0
+            margin: 0 0 12px 10px
+            text-align: center
+            border-radius: 4px
+            width: 138px
+            font-size: 14px
+            color: #4f391e
+    &-slider
+        width: 100%
+        height: 442px
+        outline: 1px solid #cc0000
+        margin-top: 23px
+        position: relative
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            bottom: -25px
+            left: -88px
+            width: 321px
+            height: 237px
+            background: no-repeat 0 0 url(../img/product-types/bucket.png)
+            z-index: -100
+        &:after
+            content: ""
+            display: block
+            position: absolute
+            bottom: -19px
+            left: 17px
+            width: 103px
+            height: 101px
+            background: no-repeat 0 0 url(../img/product-types/bucket-top.png)
+            z-index: 100
+    &-img
+        margin: 10px 10px 10px 23px
+        width: 400px !important
+        height: 420px
+        background-color: #fff
+        box-shadow: 0 0 10px rgba(0,0,0,0.3)
+        border-radius: 10px
+        a
+            display: block
+            width: 100%
+            height: 420px
+            padding-top: 86px
+            img
+                display: block
+                margin: 0 auto
+
+
