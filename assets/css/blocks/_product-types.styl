@@ -27,7 +27,6 @@
     &-slider
         width: 100%
         height: 442px
-        outline: 1px solid #cc0000
         margin-top: 35px
         position: relative
         &:before
@@ -35,7 +34,7 @@
             display: block
             position: absolute
             bottom: -25px
-            left: -88px
+            left: -105px
             width: 321px
             height: 237px
             background: no-repeat 0 0 url(../img/product-types/bucket.png)
@@ -45,11 +44,13 @@
             display: block
             position: absolute
             bottom: -19px
-            left: 17px
+            left: 0
             width: 103px
             height: 101px
             background: no-repeat 0 0 url(../img/product-types/bucket-top.png)
             z-index: 100
+        &__item
+            position: relative
     &-img
         margin: 10px 10px 10px 23px
         width: 400px !important
@@ -76,7 +77,89 @@
             img
                 display: block
                 margin: 0 auto
-    //&-specs
-        //display: none
+    &-specs
+        position: absolute
+        display: block
+        top: 0
+        right: 0
+        width: 515px
+        height: 420px
+        border-radius: 20px
+        background: rgba(255,255,255,0.5)
+        box-shadow: 0 0 15px rgba(0,0,0,.3)
+        &-heading
+            height: 55px
+            background: 0 0 url(../img/textures/wood-texture.jpg)
+            border-radius: 20px 20px 0 0
+            border: 1px solid #a17145
+            &__name
+                display: block
+                float: left
+                font-size: 24px
+                font-weight: 700
+                color: #4f391e
+                text-decoration: none
+                border-bottom: 1px solid #4f391e
+                margin: 13px 0 0 21px
+                padding-bottom: 3px
+            &__more
+                margin: 10px 15px 0 0
+                display: block
+                float: right
+                text-align: center
+                padding-top: 5px
+        &__table
+            width: 92%
+            margin-left: 25px
+            margin-top: 17px
+            tr
+                border-bottom: 1px solid #a28c7a
+                &:last-child
+                    border: none
+                td
+                    font-size: 14px
+                    color: #39200d
+                    padding: 6px 0
+                    &:first-child
+                        border-right: 1px solid #a28c7a
+                        width: 225px
+                    &:last-child
+                        padding-left: 26px
+        &__prices
+            height: 115px
+            margin: 15px 15px 0 25px
+            position: relative
+        &__price
+            position: absolute
+            padding: 16px 0 0 22px
+            border-radius: 8px
+            border: 1px solid #a28c7a
+            &:first-child
+                top: 0
+                left: 0
+                width: 240px
+                height: 115px
+                background: 0 0 url(../img/textures/wood-texture.jpg)
+                z-index: 50
+            &:last-child
+                top: 0
+                right: 0
+                width: 260px
+                height: 115px
+                background: 0 0 url(../img/textures/wood-texture-lighter.jpg)
+                padding-left: 52px
+            dt
+                font-size: 14px
+                font-weight: 700
+                line-height: 1.2em
+                color: #2b180b
+            dd
+                font-size: 30px
+                font-weight: 700
+                margin: 20px 0 0 0
+dl
+    margin: 0 !important
+
+
 
 

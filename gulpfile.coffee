@@ -12,7 +12,7 @@ gulp.task 'stylus', ->
         .pipe($.plumber())
         .pipe($.sourcemaps.init())
         .pipe($.stylus())
-        # .pipe($.autoprefixer('last 3 version'))
+        .pipe($.autoprefixer('last 5 version'))
         # .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest('assets'))
         .pipe(browserSync.reload({stream: true}))
