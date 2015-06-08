@@ -22,6 +22,7 @@ $(document).ready(function() {
         items : 1,
         singleItem : true,
         pagination : false,
+        navigationText : false,
         theme : "theme-product-types",
         navigation : true,
     });
