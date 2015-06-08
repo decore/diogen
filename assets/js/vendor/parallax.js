@@ -43,14 +43,16 @@ var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
     }
 }(jQuery));
 
-$('.call-back-2').parallax({
-speed : 0.3
-});
+$('window').load(function(){
+    $('.call-back-2').parallax({
+    speed : 0.3
+    });
 
-$('.company-features').parallax({
-speed : 0.3
-});
+    $('.company-features').parallax({
+    speed : 0.3
+    });
 
-$('.call-back-1').parallax({
-speed : 0.3
+    $('.call-back-1').parallax({
+    speed : 0.3
+    });
 });
