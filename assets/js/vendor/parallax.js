@@ -12,7 +12,7 @@
 
         // Establish default settings
         var settings = $.extend({
-            speed        : 0.15
+            speed        : 0.55
         }, options);
 
         // Iterate over each object in collection
@@ -42,3 +42,15 @@ var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
         });
     }
 }(jQuery));
+
+$('.call-back-2').parallax({
+speed : 0.3
+});
+
+$('.company-features').parallax({
+speed : 0.3
+});
+
+$('.call-back-1').parallax({
+speed : 0.3
+});
