@@ -20,6 +20,7 @@ $(document).ready(function() {
         URLhashListener: true,
         startPosition: 'URLHash'
     });
+
     $("#product-types-img").owlCarousel({
         // autoPlay: 5000,
         items : 1,
