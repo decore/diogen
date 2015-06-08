@@ -2,5 +2,3 @@ node_modules
 tmp
 public
 bower_components
-assets/css/*.css
-psd
