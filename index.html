@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>[[*pagetitle]]</title>
         <meta name="description" content="[[*description]]" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -86,19 +87,19 @@
                             <h2>
                                 Выберите тип<br>бани-бочки
                             </h2>
-                            <div class="product-types__btns">
-                                <a class="product-types__btn btn" href="#sl0">«Мини» 2,1 м</a>
-                                <a class="product-types__btn btn" href="#sl1">«Эконом» 2,3 м</a>
-                                <a class="product-types__btn btn" href="#sl2">«Стандарт» 3м</a>
-                                <a class="product-types__btn btn" href="#sl3">«Люкс» 3,5 м</a>
-                                <a class="product-types__btn btn" href="#sl4">«Мега-2» 5 м</a>
-                                <a class="product-types__btn btn" href="#sl5">«Мега-3» 5 м</a>
-                                <a class="product-types__btn btn" href="#sl6">«Эксклюзив» 6 м</a>
-                                <a class="product-types__btn btn" href="#sl7">«Супер-люкс» 4 м</a>
+                            <div class="product-types__btns owl-controls">
+                                <a class="product-types__btn btn" href="#one">«Мини» 2,1 м</a>
+                                <a class="product-types__btn btn" href="#two">«Эконом» 2,3 м</a>
+                                <a class="product-types__btn btn" href="#three">«Стандарт» 3м</a>
+                                <a class="product-types__btn btn" href="#four">«Люкс» 3,5 м</a>
+                                <a class="product-types__btn btn" href="#five">«Мега-2» 5 м</a>
+                                <a class="product-types__btn btn" href="#six">«Мега-3» 5 м</a>
+                                <a class="product-types__btn btn" href="#seven">«Эксклюзив» 6 м</a>
+                                <a class="product-types__btn btn" href="#eight">«Супер-люкс» 4 м</a>
                             </div>
                         </div>
                         <div class="product-types-slider" id="product-types-slider">
-                            <div class="product-types-slider__item" data-hash="sl0">
+                            <div class="product-types-slider__item" data-hash="one">
                                 <div class="product-types-img" id="product-types-img">
                                     <a href="#"><img src="assets/img/product-types/item/1.png" class="product-types-img__item"></a>
                                     <a href="#"><img src="assets/img/product-types/item/1.png" class="product-types-img__item"></a>
@@ -147,25 +148,25 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-types-slider__item" data-hash="sl1">
+                            <div class="product-types-slider__item" data-hash="two">
                                 2
                             </div>
-                            <div class="product-types-slider__item" data-hash="sl3">
+                            <div class="product-types-slider__item" data-hash="three">
                                 3
                             </div>
-                            <div class="product-types-slider__item" data-hash="sl4">
+                            <div class="product-types-slider__item" data-hash="four">
                                 4
                             </div>
-                            <div class="product-types-slider__item" data-hash="sl4">
+                            <div class="product-types-slider__item" data-hash="five">
                                 5
                             </div>
-                            <div class="product-types-slider__item" data-hash="sl5">
+                            <div class="product-types-slider__item" data-hash="six">
                                 6
                             </div>
-                            <div class="product-types-slider__item" data-hash="sl6">
+                            <div class="product-types-slider__item" data-hash="seven">
                                 7
                             </div>
-                            <div class="product-types-slider__item" data-hash="sl7">
+                            <div class="product-types-slider__item" data-hash="eight">
                                 8
                             </div>
                         </div>
@@ -316,7 +317,9 @@
                         <p>Хотите увидеть всё своими глазами? Приезжайте к нам на производство по адресу: г. Москва, ул. Шоссейная, д. 60</p>
                     </div>
                 </div>
-                <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OP_RAj2dSl9vLS2DB67gV3HZ4jiR6p62&width=100%&height=490"></script>
+               <!-- /* <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=CpunF3I_XlMrxh75Cn0HAKP4UzqzgSe-&width=100%&height=490"></script>*/ -->
+               <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                <div id="map" style="width: 100%; height: 490px; padding: 0; margin: 0;"></div>
             </div>
 
         </div>
