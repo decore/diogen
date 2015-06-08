@@ -12,13 +12,20 @@ $(document).ready(function() {
     ajax_forms();
 
     // owl
-    $("#product-types-slider").owlCarousel({
+    var owl = $('#product-types-slider')
+    owl.owlCarousel({
         // autoPlay: 5000,
         items : 1,
         pagination : false,
         singleItem : true,
         URLhashListener: true,
         startPosition: 'URLHash'
+    });
+    $('.product-types__btn').click(function(e){
+        e.preventDefault();
+        var id = $(this).attr('href');
+        // owl.trigger('next.owl.carousel');
+        owl.trigger('next.owl.carousel');
     });
 
     $("#product-types-img").owlCarousel({
