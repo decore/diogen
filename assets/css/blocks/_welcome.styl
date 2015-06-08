@@ -1,5 +1,13 @@
 .welcome
-    background: url(../img/backgrounds/1.png)
-    height: 680px
+    background: url('../img/welcome/bg.jpg') center no-repeat
+    height: 606px
     position: relative
-    top: -18px
+    &:after
+        display: block
+        background: url('../img/welcome/bottom.png') center no-repeat
+        position: absolute
+        z-index: 2
+        height: 136px
+        width: 100%
+        bottom: -135px
+        content: ''
