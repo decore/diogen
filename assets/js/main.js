@@ -17,7 +17,7 @@ ymaps.ready(function () {
                             zoom: 18
                         }),
                         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                            hintContent: 'Собственный значок метки'
+                            hintContent: 'Бани бочки от «Диогена»'
                         }, {
                             // Опции.
                             // Необходимо указать данный тип макета.
