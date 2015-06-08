@@ -11,6 +11,7 @@ $(document).ready(function() {
     accordion();
     ajax_forms();
 
+<<<<<<< HEAD
 ymaps.ready(function () {
                     var myMap = new ymaps.Map('map', {
                             center: [55.674692, 37.722478],
@@ -30,18 +31,45 @@ ymaps.ready(function () {
                             // её "ножки" (точки привязки).
                             iconImageOffset: [-3, -42]
                         });
+=======
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                center: [55.674692, 37.722478],
+                zoom: 18
+            }),
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Собственный значок метки'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: '/assets/img/icons/cursor-map.png',
+                // Размеры метки.
+                iconImageSize: [30, 42],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-3, -42]
+            });
+>>>>>>> 872814154699c339aa602fdb1aabcd49fab979f1
 
-                    myMap.geoObjects.add(myPlacemark);
-                });
+        myMap.geoObjects.add(myPlacemark);
+    });
 
     // owl
-    $("#product-types-slider").owlCarousel({
+    var owl = $('#product-types-slider')
+    owl.owlCarousel({
         // autoPlay: 5000,
         items : 1,
         pagination : false,
         singleItem : true,
-        URLhashListener: true,
-        startPosition: 'URLHash'
+        autoplayHoverPause:true,
+    });
+    $('.product-types__btn').click(function(e){
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+        var id = $(this).index();
+        owl.trigger('owl.jumpTo', id);
     });
 
     $("#product-types-img").owlCarousel({
@@ -59,6 +87,13 @@ ymaps.ready(function () {
         theme : "theme-product-material",
         singleItem : true
     });
+
+    //wow
+    if (!($.browser.msie)){
+        if(!($.browser.versionNumber==8)){
+            new WOW().init({mobile: false});
+        }
+    };
 });
 
 function accordion() {
