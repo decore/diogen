@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>[[*pagetitle]]</title>
         <meta name="description" content="[[*description]]" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -28,7 +29,7 @@
                 <div class="container">
                     <div class="header__wrap">
                         <div class="header__left">
-                            <div class="header__icon"><img src="assets/img/icons/house.png"></div>
+                            <a href="/" class="header__icon"><img src="assets/img/icons/house.png"></a>
                             <div class="header__address">г. Москва, ул. Шоссейная, д. 60</div>
                             <a href="mailto:info@bochka-diogena.ru" class="header__email">info@bochka-diogena.ru</a>
                             <a href="tel:+79036683636" class="header__tel">+7-903-668-36-36</a>
@@ -86,19 +87,19 @@
                             <h2>
                                 Выберите тип<br>бани-бочки
                             </h2>
-                            <div class="product-types__btns">
-                                <a class="product-types__btn btn">«Мини» 2,1 м</a>
-                                <a class="product-types__btn btn">«Эконом» 2,3 м</a>
-                                <a class="product-types__btn btn">«Стандарт» 3м</a>
-                                <a class="product-types__btn btn">«Люкс» 3,5 м</a>
-                                <a class="product-types__btn btn">«Мега-2» 5 м</a>
-                                <a class="product-types__btn btn">«Мега-3» 5 м</a>
-                                <a class="product-types__btn btn">«Эксклюзив» 6 м</a>
-                                <a class="product-types__btn btn">«Супер-люкс» 4 м</a>
+                            <div class="product-types__btns owl-controls">
+                                <a class="product-types__btn btn" href="#one">«Мини» 2,1 м</a>
+                                <a class="product-types__btn btn" href="#two">«Эконом» 2,3 м</a>
+                                <a class="product-types__btn btn" href="#three">«Стандарт» 3м</a>
+                                <a class="product-types__btn btn" href="#four">«Люкс» 3,5 м</a>
+                                <a class="product-types__btn btn" href="#five">«Мега-2» 5 м</a>
+                                <a class="product-types__btn btn" href="#six">«Мега-3» 5 м</a>
+                                <a class="product-types__btn btn" href="#seven">«Эксклюзив» 6 м</a>
+                                <a class="product-types__btn btn" href="#eight">«Супер-люкс» 4 м</a>
                             </div>
                         </div>
                         <div class="product-types-slider" id="product-types-slider">
-                            <div class="product-types-slider__item">
+                            <div class="product-types-slider__item" data-hash="one">
                                 <div class="product-types-img" id="product-types-img">
                                     <a href="#"><img src="assets/img/product-types/item/1.png" class="product-types-img__item"></a>
                                     <a href="#"><img src="assets/img/product-types/item/1.png" class="product-types-img__item"></a>
@@ -147,11 +148,26 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-types-slider__item">
+                            <div class="product-types-slider__item" data-hash="two">
                                 2
                             </div>
-                            <div class="product-types-slider__item">
+                            <div class="product-types-slider__item" data-hash="three">
                                 3
+                            </div>
+                            <div class="product-types-slider__item" data-hash="four">
+                                4
+                            </div>
+                            <div class="product-types-slider__item" data-hash="five">
+                                5
+                            </div>
+                            <div class="product-types-slider__item" data-hash="six">
+                                6
+                            </div>
+                            <div class="product-types-slider__item" data-hash="seven">
+                                7
+                            </div>
+                            <div class="product-types-slider__item" data-hash="eight">
+                                8
                             </div>
                         </div>
                     </div>
@@ -226,29 +242,31 @@
 
             <div class="company-features parallax">
                 <div class="container">
-                    <div class="company-features__wrap">
-                        <div class="company-features__top-content clearfix">
-                            <div class="company-features__item vertical-line">
-                                <div class="company-features__item__icon-1 ico_dollar"></div>
-                                <h3>Самые низкие цены<br> на бани-бочки</h3>
-                                <p>И мы готовы за это поручиться. Если вы<br> найдете цены ниже, то мы будем готовы<br> сделать для вас баню ещё дешевле!</p>
+                    <div class="row">
+                        <div class="company-features__wrap">
+                            <div class="company-features__top-content clearfix">
+                                <div class="company-features__item vertical-line">
+                                    <div class="company-features__item__icon-1 ico_dollar"></div>
+                                    <h3>Самые низкие цены<br> на бани-бочки</h3>
+                                    <p>И мы готовы за это поручиться. Если вы<br> найдете цены ниже, то мы будем готовы<br> сделать для вас баню ещё дешевле!</p>
+                                </div>
+                                <div class="company-features__item">
+                                    <div class="company-features__item__icon-2 ico_calendar"></div>
+                                    <h3>Срок службы<br> бани-бочки — 30 лет!</h3>
+                                    <p>Несколько поколений вашей семьи смогут в<br> ней попариться. Компания «Диоген» дает<br> гарантийный срок обслуживания — 10 лет.</p>
+                                </div>
                             </div>
-                            <div class="company-features__item">
-                                <div class="company-features__item__icon-2 ico_calendar"></div>
-                                <h3>Срок службы<br> бани-бочки — 30 лет!</h3>
-                                <p>Несколько поколений вашей семьи смогут в<br> ней попариться. Компания «Диоген» дает<br> гарантийный срок обслуживания — 10 лет.</p>
-                            </div>
-                        </div>
-                        <div class="company-features__bottom-content clearfix">
-                            <div class="company-features__item">
-                                <div class="company-features__item__icon-3 ico_free"></div>
-                                <h3>Бесплатная установка<br> на любой участок</h3>
-                                <p>Мало места на участке? Затруднен подъезд<br> тяжелой техники к месту установки бани?<br> Компания  «Диоген» возьмёт эти трудности<br> на себя.</p>
-                            </div>
-                            <div class="company-features__item">
-                                <div class="company-features__item__icon-4 ico_shope"></div>
-                                <h3>Доставка на ваш<br> участок — 0 рублей</h3>
-                                <p>Привезем ваш заказ в любую точку Москвы<br> или Подмосковья бесплатно. Чтобы<br> оформить бесплатную доставку, позвоните<br> нам сегодня.</p>
+                            <div class="company-features__bottom-content clearfix">
+                                <div class="company-features__item">
+                                    <div class="company-features__item__icon-3 ico_free"></div>
+                                    <h3>Бесплатная установка<br> на любой участок</h3>
+                                    <p>Мало места на участке? Затруднен подъезд<br> тяжелой техники к месту установки бани?<br> Компания  «Диоген» возьмёт эти трудности<br> на себя.</p>
+                                </div>
+                                <div class="company-features__item">
+                                    <div class="company-features__item__icon-4 ico_shope"></div>
+                                    <h3>Доставка на ваш<br> участок — 0 рублей</h3>
+                                    <p>Привезем ваш заказ в любую точку Москвы<br> или Подмосковья бесплатно. Чтобы<br> оформить бесплатную доставку, позвоните<br> нам сегодня.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -299,7 +317,9 @@
                         <p>Хотите увидеть всё своими глазами? Приезжайте к нам на производство по адресу: г. Москва, ул. Шоссейная, д. 60</p>
                     </div>
                 </div>
-                <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OP_RAj2dSl9vLS2DB67gV3HZ4jiR6p62&width=100%&height=490"></script>
+               <!-- /* <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=CpunF3I_XlMrxh75Cn0HAKP4UzqzgSe-&width=100%&height=490"></script>*/ -->
+               <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                <div id="map" style="width: 100%; height: 490px; padding: 0; margin: 0;"></div>
             </div>
 
         </div>
