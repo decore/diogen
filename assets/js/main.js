@@ -16,7 +16,9 @@ $(document).ready(function() {
         // autoPlay: 5000,
         items : 1,
         pagination : false,
-        singleItem : true
+        singleItem : true,
+        URLhashListener: true,
+        startPosition: 'URLHash'
     });
     $("#product-types-img").owlCarousel({
         // autoPlay: 5000,
