@@ -11,28 +11,28 @@ $(document).ready(function() {
     accordion();
     ajax_forms();
 
-ymaps.ready(function () {
-                    var myMap = new ymaps.Map('map', {
-                            center: [55.674692, 37.722478],
-                            zoom: 18
-                        }),
-                        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                            hintContent: 'Собственный значок метки'
-                        }, {
-                            // Опции.
-                            // Необходимо указать данный тип макета.
-                            iconLayout: 'default#image',
-                            // Своё изображение иконки метки.
-                            iconImageHref: '/assets/img/icons/cursor-map.png',
-                            // Размеры метки.
-                            iconImageSize: [30, 42],
-                            // Смещение левого верхнего угла иконки относительно
-                            // её "ножки" (точки привязки).
-                            iconImageOffset: [-3, -42]
-                        });
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                center: [55.674692, 37.722478],
+                zoom: 18
+            }),
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Собственный значок метки'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: '/assets/img/icons/cursor-map.png',
+                // Размеры метки.
+                iconImageSize: [30, 42],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-3, -42]
+            });
 
-                    myMap.geoObjects.add(myPlacemark);
-                });
+        myMap.geoObjects.add(myPlacemark);
+    });
 
     // owl
     var owl = $('#product-types-slider')
@@ -41,14 +41,13 @@ ymaps.ready(function () {
         items : 1,
         pagination : false,
         singleItem : true,
-        URLhashListener: true,
-        startPosition: 'URLHash'
+        autoplayHoverPause:true,
     });
     $('.product-types__btn').click(function(e){
         e.preventDefault();
-        var id = $(this).attr('href');
-        // owl.trigger('next.owl.carousel');
-        owl.trigger('next.owl.carousel');
+        $(this).addClass('active').siblings().removeClass('active');
+        var id = $(this).index();
+        owl.trigger('owl.jumpTo', id);
     });
 
     $("#product-types-img").owlCarousel({
