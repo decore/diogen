@@ -1,0 +1,39 @@
+.btn::-moz-focus-inner
+	border: 0
+
+.btn
+	width: 120px
+	height: 32px
+	padding: 0 0 2px
+	font-size: 16px
+	outline: none
+	position: relative
+	cursor: pointer
+	border-radius: 3px
+	color: #704A25
+	// border: 1px solid #D2A146
+	border: rgba(183, 149, 115, 0.66)
+	border-top: 1px solid #eedac8
+	border-bottom: 1px solid #eedac8
+	text-shadow: 1px 1px 1px #ebd8c7
+	box-shadow:
+		inset 1px 0 #e0c1a6,
+		inset -1px 0 #e0c1a6,
+		inset 0 -1px #e0c1a6,
+		0 2px #9d795b,
+		0 3px #9d795b,
+		0 4px #5c371c,
+		0 5px 2px rgba(0,0,0,0.4)
+	background: url('../img/textures/wood-buttons.jpg')
+	background-color: #ebd8c7
+	font-weight: 700
+	text-decoration: none
+	&:hover
+		text-shadow: 1px 1px 1px #856953
+		color: #fff
+	&:active
+		top: 3px
+		box-shadow: inset 1px 0 #e0c1a6, inset -1px 0 #e0c1a6, inset 0 -1px #e0c1a6, 0 1px #5c371c
+	&-rounded
+		padding: 6px
+		border-radius: 10px

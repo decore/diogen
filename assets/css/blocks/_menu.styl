@@ -1,0 +1,34 @@
+.menu
+	height: 38px
+	&__item
+		float: left
+		list-style-type: none
+		height: inherit
+		padding: 0 !important
+		&:first-child > a
+			border-radius: 10px 0 0 10px
+		&:last-child > a
+			border-radius: 0 10px 10px 0
+		.btn
+			display: block
+			height: 100%
+			line-height: 36px
+			font-size: 14px
+			text-align: center
+			width: 100%
+			padding: 0 17px
+			color: #351e14
+			font-weight: 400
+			border-radius: 0
+			box-shadow: inset 1px 0 #e0c1a6, inset -1px 0 #e0c1a6, inset 0 -1px #e0c1a6, 0 2px #9d795b, 0 3px #9d795b, 0 4px #5c371c
+			border-left: 1px solid #e1c2a6
+			border-right: 1px solid #b28b64
+		&:active,
+		&.active
+			.btn
+				// background: red
+				top: 3px
+				// border: 1px solid #CF9D42
+				// border-top: 1px solid #A77F35
+				// border-bottom: 1px solid #E2AC48
+				box-shadow: inset 1px 0 #e0c1a6, inset -1px 0 #e0c1a6, inset 0 -1px #e0c1a6, 0 1px #5c371c

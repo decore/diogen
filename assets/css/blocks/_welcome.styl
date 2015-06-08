@@ -1,5 +1,55 @@
 .welcome
-    background: url(../img/backgrounds/1.png)
-    height: 680px
+    background: url('../img/welcome/bg.jpg') center no-repeat
+    height: 606px
+    margin-bottom: 10px
     position: relative
-    top: -18px
+    &:after
+        display: block
+        background: url('../img/welcome/bottom.png') center no-repeat
+        position: absolute
+        z-index: 2
+        height: 136px
+        width: 100%
+        bottom: -136px
+        content: ''
+    .container
+        position: relative
+    &__logo
+        position: absolute
+        top: 12px
+    .menu
+        position: absolute
+        top: 60px
+        right: 15px
+    &__heading
+        position: absolute
+        top: 196px
+        left: 15px
+        font-size: 38px
+        font-family: $cambria
+        color: #fff
+        line-height: 1.1
+        letter-spacing: -0.6px
+        text-shadow: 1px 1px 3px #000
+    &__features
+        position: absolute
+        top: 349px
+    &__feature
+        display: table
+        float: left
+        margin-right: 107px
+    &__tr
+        display: table-row
+    &__icon
+        display: table-cell
+        padding-right: 17px
+    &__icon-text
+        display: table-cell
+        vertical-align: middle
+        font-size: 22px
+        font-weight: 700
+        text-shadow: 1px 1px 3px #000
+    &__icon-text-question
+        color: #fff
+    &__icon-text-answer
+        color: #f6ff00

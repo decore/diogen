@@ -43,14 +43,14 @@
 
             <div class="welcome">
                 <div class="container">
-                    <img class="welcome__logo" src="assets/img/logo.png" alt="">
-                    <ul class="footer-navbar__menu">
-                        <li><a href="#" class="btn">Бани-бочки</a></li>
-                        <li><a href="#" class="btn">Цены</a></li>
-                        <li><a href="#" class="btn">Доставка</a></li>
-                        <li><a href="#" class="btn">Гарантии</a></li>
-                        <li><a href="#" class="btn">Отзывы</a></li>
-                        <li><a href="#" class="btn">Контакты</a></li>
+                    <a href="/" class="welcome__logo"><img src="assets/img/logos/diogen.png" alt=""></a>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="btn">Бани-бочки</a></li>
+                        <li class="menu__item"><a href="#" class="btn">Цены</a></li>
+                        <li class="menu__item"><a href="#" class="btn">Доставка</a></li>
+                        <li class="menu__item active"><a href="#" class="btn">Гарантии</a></li>
+                        <li class="menu__item"><a href="#" class="btn">Отзывы</a></li>
+                        <li class="menu__item"><a href="#" class="btn">Контакты</a></li>
                     </ul>
                     <h1 class="welcome__heading">
                         Баня на вашем участке уже через 5 дней<br>
@@ -58,10 +58,14 @@
                     </h1>
                     <div class="welcome__features">
                         <div class="welcome__feature">
-                            <img src="assets/img/welcome/percent.png" class="welcome__icon">
-                            <div class="welcome__icon-text">
-                                <div class="welcome__icon-text-question">Найдёте дешевле?</div>
-                                <div class="welcome__icon-text-answer">Сделаем скидку!</div>
+                            <div class="welcome__tr">
+                                <div class="welcome__icon">
+                                    <img src="assets/img/welcome/percent.png">
+                                </div>
+                                <div class="welcome__icon-text">
+                                    <div class="welcome__icon-text-question">Найдёте дешевле?</div>
+                                    <div class="welcome__icon-text-answer">Сделаем скидку!</div>
+                                </div>
                             </div>
                         </div>
                         <div class="welcome__feature">
@@ -77,76 +81,78 @@
 
             <div class="product-types">
                 <div class="container">
-                    <div class="product-types__heading">
-                        <div class="product-types__heading-text">
-                            Выберите тип<br>бани-бочки
-                        </div>
-                        <div class="product-types__btns">
-                            <a class="product-types__btn btn">«Мини» 2,1 м</a>
-                            <a class="product-types__btn btn">«Эконом» 2,3 м</a>
-                            <a class="product-types__btn btn">«Стандарт» 3м</a>
-                            <a class="product-types__btn btn">«Люкс» 3,5 м</a>
-                            <a class="product-types__btn btn">«Мега-2» 5 м</a>
-                            <a class="product-types__btn btn">«Мега-3» 5 м</a>
-                            <a class="product-types__btn btn">«Эксклюзив» 6 м</a>
-                            <a class="product-types__btn btn">«Супер-люкс» 4 м</a>
-                        </div>
-                    </div>
-                    <div class="product-types-slider" id="product-types-slider">
-                        <div class="product-types-slider__item">
-                            <div class="product-types-img" id="product-types-img">
-                                <img src="assets/img/product-types/item/1.png" class="product-types-img__item">
-                                <img src="assets/img/product-types/item/1.png" class="product-types-img__item">
-                                <img src="assets/img/product-types/item/1.png" class="product-types-img__item">
-                            </div>
-                            <div class="product-types-specs">
-                                <div class="product-type-specs-heading">
-                                    <a href="#" class="product-type-specs-heading__name">Модель «Мини»</a>
-                                    <a href="#" class="product-type-specs-heading__more btn">Подробнее</a>
-                                </div>
-                                <table class="product-types-specs__table">
-                                    <tr>
-                                        <td>Кол-во секций</td>
-                                        <td>14</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Общая длина</td>
-                                        <td>150 м</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Длина парной</td>
-                                        <td>100 м</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Диаметр бочки</td>
-                                        <td>54 м</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Вместительность человек</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Вес</td>
-                                        <td>400 кг</td>
-                                    </tr>
-                                </table>
-                                <div class="product-type-specs__prices">
-                                    <dl claqss="product-type-specs__price">
-                                        <dt>Стоимость комплекта<br>для сборки</dt>
-                                        <dd>89 000 <span class="rub">Р</span></dd>
-                                    </dl>
-                                    <dl claqss="product-type-specs__price">
-                                        <dt>Стоимость<br>под ключ</dt>
-                                        <dd>93 000 <span class="rub">Р</span></dd>
-                                    </dl>
-                                </div>
+                    <div class="row">
+                        <div class="product-types__heading clearfix">
+                            <h2>
+                                Выберите тип<br>бани-бочки
+                            </h2>
+                            <div class="product-types__btns">
+                                <a class="product-types__btn btn">«Мини» 2,1 м</a>
+                                <a class="product-types__btn btn">«Эконом» 2,3 м</a>
+                                <a class="product-types__btn btn">«Стандарт» 3м</a>
+                                <a class="product-types__btn btn">«Люкс» 3,5 м</a>
+                                <a class="product-types__btn btn">«Мега-2» 5 м</a>
+                                <a class="product-types__btn btn">«Мега-3» 5 м</a>
+                                <a class="product-types__btn btn">«Эксклюзив» 6 м</a>
+                                <a class="product-types__btn btn">«Супер-люкс» 4 м</a>
                             </div>
                         </div>
-                        <div class="product-types-slider__item">
-                            2
-                        </div>
-                        <div class="product-types-slider__item">
-                            3
+                        <div class="product-types-slider" id="product-types-slider">
+                            <div class="product-types-slider__item">
+                                <div class="product-types-img" id="product-types-img">
+                                    <a href="#"><img src="assets/img/product-types/item/1.png" class="product-types-img__item"></a>
+                                    <a href="#"><img src="assets/img/product-types/item/1.png" class="product-types-img__item"></a>
+                                    <a href="#"><img src="assets/img/product-types/item/1.png" class="product-types-img__item"></a>
+                                </div>
+                                <div class="product-types-specs">
+                                    <div class="product-type-specs-heading">
+                                        <a href="#" class="product-type-specs-heading__name">Модель «Мини»</a>
+                                        <a href="#" class="product-type-specs-heading__more btn">Подробнее</a>
+                                    </div>
+                                    <table class="product-types-specs__table">
+                                        <tr>
+                                            <td>Кол-во секций</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Общая длина</td>
+                                            <td>150 м</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Длина парной</td>
+                                            <td>100 м</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Диаметр бочки</td>
+                                            <td>54 м</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вместительность человек</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вес</td>
+                                            <td>400 кг</td>
+                                        </tr>
+                                    </table>
+                                    <div class="product-type-specs__prices">
+                                        <dl claqss="product-type-specs__price">
+                                            <dt>Стоимость комплекта<br>для сборки</dt>
+                                            <dd>89 000 <span class="rub">Р</span></dd>
+                                        </dl>
+                                        <dl claqss="product-type-specs__price">
+                                            <dt>Стоимость<br>под ключ</dt>
+                                            <dd>93 000 <span class="rub">Р</span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-types-slider__item">
+                                2
+                            </div>
+                            <div class="product-types-slider__item">
+                                3
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,6 +161,8 @@
             <div class="call-back-1 parallax">
                 <div class="container">
                     <div class="call-back-1__wrap">
+                    <div class="mask-coll-back1-gray"></div>
+                    <div class="mask-coll-back1-white"></div>
                         <fieldset class="call-back-1__call-info">
                             <legend>Станьте счастливым владельцем<br> бани-бочки уже через 5 дней</legend>
                             <p>Для этого  позвоните нам сегодня:</p>
@@ -278,8 +286,8 @@
                             <p class="call-back-2__tel">+7-903-668-36-36</p>
                             <a href="#" class="btn">Вам перезвонить?</a>
                         </fieldset>
-                        <div class="mask-coll-back-gray"></div>
-                        <div class="mask-coll-back-white"></div>
+                        <div class="mask-coll-back2-gray"></div>
+                        <div class="mask-coll-back2-white"></div>
                     </div>
                 </div>
             </div>
@@ -291,19 +299,20 @@
                         <p>Хотите увидеть всё своими глазами? Приезжайте к нам на производство по адресу: г. Москва, ул. Шоссейная, д. 60</p>
                     </div>
                 </div>
+                <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OP_RAj2dSl9vLS2DB67gV3HZ4jiR6p62&width=100%&height=490"></script>
             </div>
 
         </div>
         <div class="footer-navbar">
             <div class="container">
                 <div class="footer-navbar__wrap">
-                    <ul class="footer-navbar__menu">
-                        <li><a href="#" class="btn">Бани-бочки</a></li>
-                        <li><a href="#" class="btn">Цены</a></li>
-                        <li><a href="#" class="btn">Доставка</a></li>
-                        <li><a href="#" class="btn">Гарантии</a></li>
-                        <li><a href="#" class="btn">Отзывы</a></li>
-                        <li><a href="#" class="btn">Контакты</a></li>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="btn">Бани-бочки</a></li>
+                        <li class="menu__item"><a href="#" class="btn">Цены</a></li>
+                        <li class="menu__item"><a href="#" class="btn">Доставка</a></li>
+                        <li class="menu__item"><a href="#" class="btn">Гарантии</a></li>
+                        <li class="menu__item"><a href="#" class="btn">Отзывы</a></li>
+                        <li class="menu__item"><a href="#" class="btn">Контакты</a></li>
                     </ul>
                     <div class="footer-navbar__social-icons">
                         <a href="#" class="b"></a>
@@ -349,6 +358,5 @@
         <script src="/assets/js/vendor/owl-carousel/owl.carousel.js"></script>
         <script src="/assets/js/vendor/parallax.js"></script>
         <script src="/assets/js/main.js"></script>
-        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OP_RAj2dSl9vLS2DB67gV3HZ4jiR6p62&width=100%&height=490"></script>
     </body>
 </html>
