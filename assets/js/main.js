@@ -21,7 +21,10 @@ $(document).ready(function() {
         // autoPlay: 5000,
         items : 1,
         singleItem : true,
-        pagination : false
+        pagination : false,
+        navigationText : false,
+        theme : "theme-product-types",
+        navigation : true,
     });
     $("#product-material-slider").owlCarousel({
         autoPlay: 5000,
