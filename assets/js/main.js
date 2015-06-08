@@ -13,15 +13,15 @@ $(document).ready(function() {
 
     // owl
     $("#product-types-slider").owlCarousel({
-        autoPlay: 5000,
+        // autoPlay: 5000,
         items : 1,
         singleItem : true
     });
-    // $("#product-types-img").owlCarousel({
-    //     autoPlay: 5000,
-    //     items : 1,
-    //     singleItem : true
-    // });
+    $("#product-types-img").owlCarousel({
+        // autoPlay: 5000,
+        items : 1,
+        singleItem : true
+    });
     $("#product-material-slider").owlCarousel({
         autoPlay: 5000,
         items : 1,
