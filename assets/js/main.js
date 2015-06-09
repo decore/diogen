@@ -36,7 +36,7 @@ $(document).ready(function() {
     });
 
     // owl
-    var owl = $('#product-types-slider')
+    var owl = $('.product-types-slider');
     owl.owlCarousel({
         // autoPlay: 5000,
         items : 1,
@@ -49,9 +49,12 @@ $(document).ready(function() {
         $(this).addClass('active').siblings().removeClass('active');
         var id = $(this).index();
         owl.trigger('owl.jumpTo', id);
+        //typesImg.reinit();
+        //$(window).resize()
     });
 
-    $("#product-types-img").owlCarousel({
+    var typesImg = $(".product-types-img");
+    typesImg.owlCarousel({
         // autoPlay: 5000,
         items : 1,
         singleItem : true,
@@ -60,7 +63,7 @@ $(document).ready(function() {
         theme : "theme-product-types",
         navigation : true,
     });
-    $("#product-material-slider").owlCarousel({
+    $(".product-material__slider").owlCarousel({
         autoPlay: 5000,
         items : 1,
         theme : "theme-product-material",

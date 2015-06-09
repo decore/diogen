@@ -43,7 +43,7 @@ var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
     }
 }(jQuery));
 
-$('window').load(function(){
+$(window).load(function(){
     $('.call-back-2').parallax({
     speed : 0.3
     });

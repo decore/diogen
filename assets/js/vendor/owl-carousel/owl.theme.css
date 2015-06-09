@@ -95,7 +95,7 @@
     width: 21px;
     height: 32px;
     margin: 5px 7px 9px 5px;
-    background: no-repeat -25px -0px url(../../../img/product-material/spritebox-sprite.png);
+    background: no-repeat -22px 3px url(../../../img/product-material/spritebox-sprite.png);
 }
 
 .theme-product-material .owl-controls .owl-page.active span,
