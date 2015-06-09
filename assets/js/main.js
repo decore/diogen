@@ -11,34 +11,13 @@ $(document).ready(function() {
     accordion();
     ajax_forms();
 
-<<<<<<< HEAD
-ymaps.ready(function () {
-                    var myMap = new ymaps.Map('map', {
-                            center: [55.674692, 37.722478],
-                            zoom: 18
-                        }),
-                        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                            hintContent: 'Бани бочки от «Диогена»'
-                        }, {
-                            // Опции.
-                            // Необходимо указать данный тип макета.
-                            iconLayout: 'default#image',
-                            // Своё изображение иконки метки.
-                            iconImageHref: '/assets/img/icons/cursor-map.png',
-                            // Размеры метки.
-                            iconImageSize: [30, 42],
-                            // Смещение левого верхнего угла иконки относительно
-                            // её "ножки" (точки привязки).
-                            iconImageOffset: [-3, -42]
-                        });
-=======
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
-                center: [55.674692, 37.722478],
-                zoom: 18
-            }),
+            center: [55.674692, 37.722478],
+            zoom: 18
+        }),
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки'
+                hintContent: 'Бани бочки от «Диогена»'
             }, {
                 // Опции.
                 // Необходимо указать данный тип макета.
@@ -50,9 +29,7 @@ ymaps.ready(function () {
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
                 iconImageOffset: [-3, -42]
-            });
->>>>>>> 872814154699c339aa602fdb1aabcd49fab979f1
-
+        });
         myMap.geoObjects.add(myPlacemark);
     });
 
