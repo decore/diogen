@@ -95,12 +95,12 @@
     width: 21px;
     height: 32px;
     margin: 5px 7px 9px 5px;
-    background: no-repeat 3px 2px url(../../../img/product-material/slider-pagination.png);
+    background: no-repeat -25px -0px url(../../../img/product-material/spritebox-sprite.png);
 }
 
 .theme-product-material .owl-controls .owl-page.active span,
 .theme-product-material .owl-controls.clickable .owl-page:hover span{
-    background: no-repeat 0 0 url(../../../img/product-material/slider-pagination-active.png);
+    background: no-repeat -0px -0px url(../../../img/product-material/spritebox-sprite.png);
 }
 
 /* slider-product-types */
