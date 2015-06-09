@@ -13,11 +13,11 @@ $(document).ready(function() {
 
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
-                center: [55.674692, 37.722478],
-                zoom: 18
-            }),
+            center: [55.674692, 37.722478],
+            zoom: 18
+        }),
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки'
+                hintContent: 'Бани бочки от «Диогена»'
             }, {
                 // Опции.
                 // Необходимо указать данный тип макета.
@@ -29,8 +29,7 @@ $(document).ready(function() {
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
                 iconImageOffset: [-3, -42]
-            });
-
+        });
         myMap.geoObjects.add(myPlacemark);
     });
 
@@ -65,6 +64,13 @@ $(document).ready(function() {
         theme : "theme-product-material",
         singleItem : true
     });
+
+    //wow
+    if (!($.browser.msie)){
+        if(!($.browser.versionNumber==8)){
+            new WOW().init({mobile: false});
+        }
+    };
 });
 
 function accordion() {
