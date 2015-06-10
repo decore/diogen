@@ -48,7 +48,7 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).addClass('active').siblings().removeClass('active');
         var id = $(this).index();
-        owl.trigger('owl.jumpTo', id);
+        owl.trigger('owl.goTo', id);
         //typesImg.reinit();
         //$(window).resize()
     });
