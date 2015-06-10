@@ -31,15 +31,13 @@
     &__slider
         width: 100%
         min-height: 200px
-        position: absolute
-        right: 30px
-        top: 235px
+        padding-top: 72px
         &__text
             min-height: inherit
             width: 430px
-            position: absolute
-            top: 0
-            right: 0
+            max-height: 330px
+            overflow: auto
+            float: right
             h3
                 font-size: 24px
                 padding-top: 5px
@@ -49,6 +47,7 @@
                 line-height: 1.9em
         &__img
             padding-top: 29px
+            float: left
         &__item
             position: relative
 @media (max-width: 1750px)
@@ -72,4 +71,4 @@
             display: none
 @media (max-width: 1030px)
     .theme-product-material .owl-controls
-        right: -40px !important
+        right: -20px !important
