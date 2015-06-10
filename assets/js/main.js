@@ -61,7 +61,7 @@ $(document).ready(function() {
         navigation : true,
     });
     $(".product-material__slider").owlCarousel({
-        //autoPlay: 5000,
+        autoPlay: 5000,
         items : 1,
         theme : "theme-product-material",
         autoHeight : true,
