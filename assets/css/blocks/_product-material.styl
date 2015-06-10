@@ -1,5 +1,16 @@
 .product-material
     height: 580px
+    position: relative
+    &:after
+        content: ""
+        display: block
+        position: absolute
+        right: 0
+        top: 0
+        width: 450px
+        height: 122px
+        background: no-repeat 0 0 url(../img/product-material/towel.png)
+        z-index: -100
     &__wrap
         height: 580px
         padding-top: 38px
@@ -13,16 +24,6 @@
             width: 258px
             height: 336px
             background: no-repeat 0 0 url(../img/product-material/gloves.png)
-            z-index: -100
-        &:after
-            content: ""
-            display: block
-            position: absolute
-            right: -396px
-            top: 0
-            width: 450px
-            height: 122px
-            background: no-repeat 0 0 url(../img/product-material/towel.png)
             z-index: -100
         h2
             line-height: 1.2em
@@ -66,6 +67,7 @@
     .product-material__wrap
         &:before
             display: none
+    .product-material
         &:after
             display: none
 @media (max-width: 1030px)

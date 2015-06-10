@@ -110,8 +110,8 @@
 .theme-product-types .owl-controls .owl-buttons div{
     position: absolute;
     display: block;
-    height: 35px;
-    width: 18px;
+    height: 45px;
+    width: 30px;
 }
 
 .theme-product-types .owl-controls{
@@ -119,21 +119,21 @@
 }
 
 .theme-product-types .owl-controls .owl-buttons div.owl-prev{
-    left: -22px;
-    top: -230px;
-    background: no-repeat -0px -36px url(../../../img/icons/spritebox-sprite-arrow.png);
+    left: -27px;
+    top: -242px;
+    background: no-repeat -69px 0 url(../../../img/icons/spritebox-sprite-arrow.png);
 }
 
 .theme-product-types .owl-controls .owl-buttons div.owl-prev:hover {
-    background: no-repeat -22px 0 url(../../../img/icons/spritebox-sprite-arrow.png);
+    background: no-repeat 0 0 url(../../../img/icons/spritebox-sprite-arrow.png);
 }
 
 .theme-product-types .owl-controls .owl-buttons div.owl-next{
-    right: -22px;
-    top: -230px;
-    background: no-repeat -15px -36px url(../../../img/icons/spritebox-sprite-arrow.png);
+    right: -27px;
+    top: -242px;
+    background: no-repeat -99px 0 url(../../../img/icons/spritebox-sprite-arrow.png);
 }
 
 .theme-product-types .owl-controls .owl-buttons div.owl-next:hover {
-    background: no-repeat 0 0 url(../../../img/icons/spritebox-sprite-arrow.png);
+    background: no-repeat -35px 0 url(../../../img/icons/spritebox-sprite-arrow.png);
 }
