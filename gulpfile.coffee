@@ -4,7 +4,7 @@ $ = require('gulp-load-plugins')()
 browserSync = require('browser-sync')
 
 gulp.task 'html', ->
-    gulp.src(['index.html'])
+    gulp.src(['offer.html'])
         .pipe(browserSync.reload({stream: true}))
 
 gulp.task 'stylus', ->
