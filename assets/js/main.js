@@ -38,24 +38,21 @@ $(document).ready(function() {
     // owl
     var owl = $('.product-types-slider');
     owl.owlCarousel({
-        // autoPlay: 5000,
         items : 1,
         pagination : false,
         singleItem : true,
         autoplayHoverPause:true,
+        slideSpeed : 600
     });
     $('.product-types__btn').click(function(e){
         e.preventDefault();
         $(this).addClass('active').siblings().removeClass('active');
         var id = $(this).index();
         owl.trigger('owl.goTo', id);
-        //typesImg.reinit();
-        //$(window).resize()
     });
 
     var typesImg = $(".product-types-img");
     typesImg.owlCarousel({
-        // autoPlay: 5000,
         items : 1,
         singleItem : true,
         pagination : false,
